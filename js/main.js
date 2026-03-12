@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Add animation on scroll
     const animateOnScroll = function() {
-        const elements = document.querySelectorAll('.product-card, .feature-card, .portfolio-card, .news-card');
+        const elements = document.querySelectorAll('.product-card, .feature-card, .portfolio-card, .news-card, .card-industrial');
         
         elements.forEach(element => {
             const elementPosition = element.getBoundingClientRect().top;
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
     
     // Initialize elements with hidden state
-    const animatedElements = document.querySelectorAll('.product-card, .feature-card, .portfolio-card, .news-card');
+    const animatedElements = document.querySelectorAll('.product-card, .feature-card, .portfolio-card, .news-card, .card-industrial');
     animatedElements.forEach(element => {
         element.style.opacity = '0';
         element.style.transform = 'translateY(20px)';
