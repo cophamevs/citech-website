@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCR-30 Solar Cleaning Robot - CITech</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fas fa-solar-panel"></i></span>
+                <span class="logo-text">CITech</span>
+            </a>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="scr30.html" class="nav-link active">SCR-30 Robot</a></li>
+                <li><a href="news.html" class="nav-link">News & Insights</a></li>
+                <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Product Hero -->
+    <section class="product-hero">
+        <div class="container">
+            <div class="product-hero-grid">
+                <div class="product-hero-content">
+                    <div class="product-hero-badge">
+                        <i class="fas fa-star"></i>
+                        Flagship Product
+                    </div>
+                    <h1 class="product-hero-title">SCR-30</h1>
+                    <p class="product-hero-subtitle">
+                        Next-generation solar panel cleaning robot designed for commercial & industrial 
+                        rooftop projects and solar farms with challenging terrain.
+                    </p>
+                    <div class="product-hero-specs">
+                        <div class="spec-item">
+                            <i class="fas fa-mountain"></i>
+                            <div>
+                                <span>Max Slope</span>
+                                <strong>25° - 30°</strong>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-battery-full"></i>
+                            <div>
+                                <span>Battery Type</span>
+                                <strong>LiFePO4</strong>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <span>Runtime</span>
+                                <strong>4 - 6 Hours</strong>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <span>Protection</span>
+                                <strong>IP65 Rated</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="contact.html" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i>
+                            Request Quote
+                        </a>
+                        <a href="#specifications" class="btn btn-outline">
+                            <i class="fas fa-list"></i>
+                            View Specs
+                        </a>
+                    </div>
+                </div>
+                <div class="product-hero-image">
+                    <div class="product-hero-placeholder">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details -->
+    <section class="section">
+        <div class="container">
+            <div class="tabs">
+                <button class="tab active" data-tab="overview">Overview</button>
+                <button class="tab" data-tab="specifications">Specifications</button>
+                <button class="tab" data-tab="features">Key Features</button>
+            </div>
+
+            <!-- Overview Tab -->
+            <div class="tab-content active" id="overview">
+                <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+                    <h2 class="section-title">Automated Solar Cleaning for Challenging Terrains</h2>
+                </div>
+                <p style="font-size: 1.125rem; color: var(--gray-600); line-height: 1.8; margin-bottom: 2rem;">
+                    The <strong>CITech SCR-30</strong> is a revolutionary solar panel cleaning robot specifically engineered 
+                    for commercial and industrial rooftop solar installations. Unlike manual cleaning methods, our 
+                    automated solution helps businesses reduce labor costs, minimize workplace accident risks, and 
+                    optimize cleaning schedules.
+                </p>
+                <p style="font-size: 1.125rem; color: var(--gray-600); line-height: 1.8; margin-bottom: 2rem;">
+                    By completely removing dust and dirt layers from photovoltaic cell surfaces, the SCR-30 restores 
+                    light absorption efficiency, helping <strong>increase power output by 25-35%</strong>. This 
+                    translates to significant ROI improvement for solar farm operators and C&I facility managers.
+                </p>
+                
+                <div class="features-grid" style="margin-top: 3rem;">
+                    <div class="feature-card" style="background: var(--gray-100); border: 1px solid var(--gray-300);">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 style="color: var(--gray-900);">Efficiency Gain</h3>
+                        <p style="color: var(--gray-600);">Restore 25-35% power output through thorough cleaning</p>
+                    </div>
+                    <div class="feature-card" style="background: var(--gray-100); border: 1px solid var(--gray-300);">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 style="color: var(--gray-900);">Labor Savings</h3>
+                        <p style="color: var(--gray-600);">Reduce manual cleaning workforce requirements</p>
+                    </div>
+                    <div class="feature-card" style="background: var(--gray-100); border: 1px solid var(--gray-300);">
+                        <div class="feature-icon">
+                            <i class="fas fa-hard-hat"></i>
+                        </div>
+                        <h3 style="color: var(--gray-900);">Safety First</h3>
+                        <p style="color: var(--gray-600);">Minimize workplace accidents on rooftops</p>
+                    </div>
+                    <div class="feature-card" style="background: var(--gray-100); border: 1px solid var(--gray-300);">
+                        <div class="feature-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3 style="color: var(--gray-900);">Optimized Schedule</h3>
+                        <p style="color: var(--gray-600);">Clean anytime without disrupting operations</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Specifications Tab -->
+            <div class="tab-content" id="specifications">
+                <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+                    <h2 class="section-title">Technical Specifications</h2>
+                </div>
+                
+                <h3 style="margin: 2rem 0 1rem; color: var(--gray-800);">Physical Characteristics</h3>
+                <table class="specs-table">
+                    <tr>
+                        <th>Overall Dimensions (L × W × H)</th>
+                        <td>~1,200 × 1,500 × 400 mm</td>
+                    </tr>
+                    <tr>
+                        <th>Operating Weight</th>
+                        <td>≤ 40 kg (including battery)</td>
+                    </tr>
+                    <tr>
+                        <th>Frame/Body Material</th>
+                        <td>Aluminum Alloy 6061-T6 / Stainless Steel 304</td>
+                    </tr>
+                    <tr>
+                        <th>Industrial Protection Rating</th>
+                        <td>IP65 (Complete dust protection & low-pressure water jet resistance)</td>
+                    </tr>
+                </table>
+
+                <h3 style="margin: 2rem 0 1rem; color: var(--gray-800);">Performance</h3>
+                <table class="specs-table">
+                    <tr>
+                        <th>Movement & Cleaning Speed</th>
+                        <td>10-20 m/minute</td>
+                    </tr>
+                    <tr>
+                        <th>Theoretical Cleaning Capacity</th>
+                        <td>~1.0 - 2.0 MWp/day (in 6-hour work shift)</td>
+                    </tr>
+                    <tr>
+                        <th>Maximum Slope Angle</th>
+                        <td>25° - 30°</td>
+                    </tr>
+                    <tr>
+                        <th>Panel Surface Pressure</th>
+                        <td>&lt; 0.5 kg/cm²</td>
+                    </tr>
+                </table>
+
+                <h3 style="margin: 2rem 0 1rem; color: var(--gray-800);">Power System</h3>
+                <table class="specs-table">
+                    <tr>
+                        <th>Battery Technology</th>
+                        <td>LiFePO4 (Lithium Iron Phosphate) - Ultra-durable, fire/explosion safe</td>
+                    </tr>
+                    <tr>
+                        <th>Operating Time</th>
+                        <td>4 - 6 hours continuous operation per charge</td>
+                    </tr>
+                    <tr>
+                        <th>Control System</th>
+                        <td>2.4GHz Remote Controller with anti-interference technology</td>
+                    </tr>
+                    <tr>
+                        <th>Safe Operating Range</th>
+                        <td>Up to 100 meters</td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Features Tab -->
+            <div class="tab-content" id="features">
+                <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+                    <h2 class="section-title">Key Features & Benefits</h2>
+                </div>
+                
+                <div class="products-grid" style="margin-top: 2rem;">
+                    <div class="product-card">
+                        <div class="product-image" style="height: 200px;">
+                            <div class="product-placeholder">
+                                <i class="fas fa-mountain"></i>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Impressive Slope Climbing</h3>
+                            <p class="product-desc">
+                                Specialized anti-slip crawler track system allows stable operation on solar panel 
+                                surfaces inclined from <strong>25° to 30°</strong>, even under wet, slippery washing conditions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image" style="height: 200px;">
+                            <div class="product-placeholder gateway">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Panel Surface Protection</h3>
+                            <p class="product-desc">
+                                Aerodynamic design with ultra-lightweight materials distributes extremely low pressure 
+                                (<strong>&lt; 0.5 kg/cm²</strong>) on tempered glass surfaces, absolutely preventing micro-cracks.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image" style="height: 200px;">
+                            <div class="product-placeholder iiot">
+                                <i class="fas fa-tint"></i>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Dual Cleaning Technology</h3>
+                            <p class="product-desc">
+                                Combines mechanical spiral brush (ultra-soft) with high-pressure water jets 
+                                (<strong>2-8 bar</strong>) to remove stubborn dirt, bird droppings, and industrial dust.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image" style="height: 200px;">
+                            <div class="product-placeholder">
+                                <i class="fas fa-cubes"></i>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Smart Modular Design</h3>
+                            <p class="product-desc">
+                                Quick-release assembly structure allows operators to completely disassemble/assemble 
+                                the robot in just <strong>3-5 minutes</strong>, extremely easy when moving between panel arrays.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Solar Operations?</h2>
+                <p>Get in touch with our team to schedule a demo or request a customized quote for your facility.</p>
+                <a href="contact.html" class="btn btn-primary btn-large">
+                    <i class="fas fa-paper-plane"></i>
+                    Contact Us Today
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon"><i class="fas fa-solar-panel"></i></span>
+                        <span class="logo-text">CITech</span>
+                    </a>
+                    <p class="footer-desc">
+                        Leading provider of solar automation solutions. 
+                        We help businesses maximize their renewable energy investments.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="scr30.html">SCR-30 Robot</a></li>
+                        <li><a href="news.html">News & Insights</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="scr30.html">SCR-30 Robot</a></li>
+                        <li><a href="contact.html">Solar Gateway 378</a></li>
+                        <li><a href="contact.html">IIoT Gateway</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            SB18-93, Co Xanh 18 Street,<br>
+                            Vinhomes Ocean Park 2,<br>
+                            Hung Yen Province, Vietnam
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:citech.company.sp@gmail.com">citech.company.sp@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+84966054996">0966 054 996</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CITech Technology Co., Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

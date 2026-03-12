@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CITech</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon"><i class="fas fa-solar-panel"></i></span>
+                <span class="logo-text">CITech</span>
+            </a>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="scr30.html" class="nav-link">SCR-30 Robot</a></li>
+                <li><a href="news.html" class="nav-link">News & Insights</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <span class="section-tag" style="background: rgba(255,255,255,0.1); color: var(--secondary);">Get in Touch</span>
+                <h1>Contact Us</h1>
+                <p>Ready to maximize your solar efficiency? Let's start a conversation.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info-card">
+                    <h3 style="margin-bottom: 1.5rem; color: var(--gray-900);">Contact Information</h3>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h4>Address</h4>
+                            <p>SB18-93, Co Xanh 18 Street,<br>Vinhomes Ocean Park 2,<br>Hung Yen Province, Vietnam</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h4>Email</h4>
+                            <p><a href="mailto:citech.company.sp@gmail.com">citech.company.sp@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+84966054996">0966 054 996</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h4>Business Hours</h4>
+                            <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 8:00 AM - 12:00 PM</p>
+                        </div>
+                    </div>
+
+                    <hr style="border: none; border-top: 1px solid var(--gray-300); margin: 1.5rem 0;">
+
+                    <h4 style="margin-bottom: 1rem; color: var(--gray-900);">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" style="background: var(--primary);"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" style="background: var(--primary);"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" style="background: var(--primary);"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-card">
+                    <h3 style="margin-bottom: 1.5rem; color: var(--gray-900);">Send Us a Message</h3>
+                    
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interest">I'm Interested In *</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Select a product/service</option>
+                                <option value="scr30">SCR-30 Solar Cleaning Robot</option>
+                                <option value="gateway378">Solar Gateway 378</option>
+                                <option value="iiot">Orange Pi R1 Plus IIoT Gateway</option>
+                                <option value="consultation">General Consultation</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your project, requirements, or questions..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section style="padding: 0; background: var(--gray-200);">
+        <div style="width: 100%; height: 400px; background: linear-gradient(135deg, var(--gray-300) 0%, var(--gray-400) 100%); display: flex; align-items: center; justify-content: center;">
+            <div style="text-align: center; color: var(--gray-600);">
+                <i class="fas fa-map-marked-alt" style="font-size: 4rem; margin-bottom: 1rem; display: block;"></i>
+                <h3>Our Location</h3>
+                <p>SB18-93, Co Xanh 18 Street, Vinhomes Ocean Park 2<br>Hung Yen Province, Vietnam</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: var(--gray-100); border-radius: var(--radius);">
+                    <h4 style="margin-bottom: 0.5rem; color: var(--gray-900);">What types of solar installations can the SCR-30 clean?</h4>
+                    <p style="color: var(--gray-600);">The SCR-30 is designed for commercial & industrial rooftop solar systems and solar farms with panel inclinations from 25° to 30°.</p>
+                </div>
+
+                <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: var(--gray-100); border-radius: var(--radius);">
+                    <h4 style="margin-bottom: 0.5rem; color: var(--gray-900);">How long does it take to see ROI on the cleaning robot?</h4>
+                    <p style="color: var(--gray-600);">Most clients see return on investment within 12-18 months through increased energy output (25-35% efficiency gain) and reduced labor costs.</p>
+                </div>
+
+                <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: var(--gray-100); border-radius: var(--radius);">
+                    <h4 style="margin-bottom: 0.5rem; color: var(--gray-900);">Do you provide installation and training services?</h4>
+                    <p style="color: var(--gray-600);">Yes, we provide complete installation, commissioning, and operator training services for all our products.</p>
+                </div>
+
+                <div style="margin-bottom: 1.5rem; padding: 1.5rem; background: var(--gray-100); border-radius: var(--radius);">
+                    <h4 style="margin-bottom: 0.5rem; color: var(--gray-900);">What warranty do you offer?</h4>
+                    <p style="color: var(--gray-600);">We offer a comprehensive 2-year warranty on the SCR-30 robot and 1-year warranty on our gateway products, with extended service contracts available.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon"><i class="fas fa-solar-panel"></i></span>
+                        <span class="logo-text">CITech</span>
+                    </a>
+                    <p class="footer-desc">
+                        Leading provider of solar automation solutions. 
+                        We help businesses maximize their renewable energy investments.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="scr30.html">SCR-30 Robot</a></li>
+                        <li><a href="news.html">News & Insights</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="scr30.html">SCR-30 Robot</a></li>
+                        <li><a href="contact.html">Solar Gateway 378</a></li>
+                        <li><a href="contact.html">IIoT Gateway</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            SB18-93, Co Xanh 18 Street,<br>
+                            Vinhomes Ocean Park 2,<br>
+                            Hung Yen Province, Vietnam
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:citech.company.sp@gmail.com">citech.company.sp@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+84966054996">0966 054 996</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CITech Technology Co., Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
