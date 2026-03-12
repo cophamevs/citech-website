@@ -34,63 +34,56 @@
     </nav>
 
     <!-- Product Hero -->
-    <section class="product-hero">
+    <section class="product-hero bg-grid">
         <div class="container">
             <div class="product-hero-grid">
                 <div class="product-hero-content">
-                    <div class="product-hero-badge">
-                        <i class="fas fa-star"></i>
-                        Flagship Product
+                    <div class="hero-badge">
+                        <i class="fas fa-robot"></i>
+                        Industrial Series
                     </div>
-                    <h1 class="product-hero-title">SCR-30</h1>
-                    <p class="product-hero-subtitle">
-                        Next-generation solar panel cleaning robot with **Zero Micro-Cracks** guarantee designed for commercial & industrial 
-                        rooftop projects and solar farms with challenging terrain.
+                    <h1 class="hero-title">SCR-30 <span>ROBOT</span></h1>
+                    <p class="hero-subtitle">
+                        Advanced dry/wet cleaning system engineered for 30° slopes and zero-impact panel maintenance.
                     </p>
                     <div class="product-hero-specs">
                         <div class="spec-item">
                             <i class="fas fa-mountain"></i>
                             <div>
                                 <span>Max Slope</span>
-                                <strong>25° - 30°</strong>
+                                <strong>30° GRADE</strong>
                             </div>
                         </div>
                         <div class="spec-item">
                             <i class="fas fa-battery-full"></i>
                             <div>
-                                <span>Battery Type</span>
+                                <span>Power</span>
                                 <strong>LiFePO4</strong>
-                            </div>
-                        </div>
-                        <div class="spec-item">
-                            <i class="fas fa-clock"></i>
-                            <div>
-                                <span>Runtime</span>
-                                <strong>4 - 6 Hours</strong>
                             </div>
                         </div>
                         <div class="spec-item">
                             <i class="fas fa-shield-alt"></i>
                             <div>
                                 <span>Protection</span>
-                                <strong>IP65 Rated</strong>
+                                <strong>IP65 RATED</strong>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-weight-hanging"></i>
+                            <div>
+                                <span>Weight</span>
+                                <strong>&lt; 40 KG</strong>
                             </div>
                         </div>
                     </div>
-                    <div class="hero-cta">
-                        <a href="contact.html" class="btn btn-primary">
-                            <i class="fas fa-envelope"></i>
-                            Request Quote
-                        </a>
-                        <a href="#specifications" class="btn btn-outline">
-                            <i class="fas fa-list"></i>
-                            View Specs
-                        </a>
+                    <div class="hero-cta" style="margin-top: 2rem;">
+                        <a href="contact.html" class="btn btn-primary">Request Quote</a>
+                        <a href="#specifications" class="btn btn-outline">Technical Docs</a>
                     </div>
                 </div>
-                <div class="product-hero-image">
-                    <div class="product-hero-placeholder">
-                        <i class="fas fa-robot"></i>
+                <div class="product-hero-image stitch-border stitch-border-tl stitch-border-br">
+                    <div style="aspect-ratio: 1/1; background: var(--surface); display: flex; align-items: center; justify-content: center;">
+                        <i class="fas fa-robot" style="font-size: 10rem; color: var(--surface-border);"></i>
                     </div>
                 </div>
             </div>
@@ -102,192 +95,132 @@
         <div class="container">
             <div class="tabs">
                 <button class="tab active" data-tab="overview">Overview</button>
-                <button class="tab" data-tab="specifications">Specifications</button>
-                <button class="tab" data-tab="features">Key Features</button>
+                <button class="tab" data-tab="specifications">Specs</button>
+                <button class="tab" data-tab="features">Features</button>
             </div>
 
             <!-- Overview Tab -->
             <div class="tab-content active" id="overview">
-                <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
-                    <h2 class="section-title">Automated Solar Cleaning for Challenging Terrains</h2>
+                <div class="section-header">
+                    <h2 class="section-title">Automated Asset Maintenance</h2>
                 </div>
-                <p style="font-size: 1.125rem; color: var(--gray-600); line-height: 1.8; margin-bottom: 2rem;">
-                    The <strong>CITech SCR-30</strong> is a revolutionary solar panel cleaning robot specifically engineered 
-                    for commercial and industrial rooftop solar installations. Unlike manual cleaning methods, our 
-                    automated solution helps businesses reduce labor costs, minimize workplace accident risks, and 
-                    optimize cleaning schedules.
-                </p>
-                <p style="font-size: 1.125rem; color: var(--gray-600); line-height: 1.8; margin-bottom: 2rem;">
-                    By completely removing dust and dirt layers from photovoltaic cell surfaces, the SCR-30 restores 
-                    light absorption efficiency, helping <strong>increase power output by 25-35%</strong>. This 
-                    translates to significant ROI improvement for solar farm operators and C&I facility managers.
-                </p>
-                
-                <div class="features-grid" style="margin-top: 3rem;">
-                    <div class="feature-card" style="background: var(--gray-100); border: 1px solid var(--gray-300);">
-                        <div class="feature-icon">
-                            <i class="fas fa-chart-line"></i>
+                <div class="about-grid" style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 4rem;">
+                    <div>
+                        <p class="section-desc" style="max-width: 100%; margin-bottom: 2rem;">
+                            The SCR-30 is a high-performance robotic solution designed to eliminate the inefficiencies of manual solar cleaning. With industrial-grade sensors and a specialized crawler system, it delivers consistent results in the harshest environments.
+                        </p>
+                        <div class="features-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;">
+                            <div class="card-industrial" style="padding: 2rem;">
+                                <h4 style="color: var(--white); margin-bottom: 1rem;"><i class="fas fa-clock" style="color: var(--accent);"></i> 24/7 Deployment</h4>
+                                <p style="font-size: 0.9rem; color: var(--text-dim);">Minimal downtime between cleaning cycles.</p>
+                            </div>
+                            <div class="card-industrial" style="padding: 2rem;">
+                                <h4 style="color: var(--white); margin-bottom: 1rem;"><i class="fas fa-tools" style="color: var(--accent);"></i> Modular Design</h4>
+                                <p style="font-size: 0.9rem; color: var(--text-dim);">Assembled in under 5 minutes on-site.</p>
+                            </div>
                         </div>
-                        <h3 style="color: var(--gray-900);">Efficiency Gain (25-35%)</h3>
-                        <p style="color: var(--gray-600);">Restore 25-35% power output through thorough cleaning</p>
                     </div>
-                    <div class="feature-card" style="background: var(--gray-100); border: 1px solid var(--gray-300);">
-                        <div class="feature-icon">
-                            <i class="fas fa-users"></i>
+                    <div class="card-industrial" style="border-color: var(--accent);">
+                        <h4 style="color: var(--accent); margin-bottom: 1.5rem;">EFFICIENCY IMPACT</h4>
+                        <div style="margin-bottom: 2rem;">
+                            <span style="display: block; font-size: 0.75rem; color: var(--text-dim); margin-bottom: 0.5rem;">UNIFORM CLEANING</span>
+                            <div style="height: 10px; background: var(--surface-border); border-radius: 5px; overflow: hidden;">
+                                <div style="width: 98%; height: 100%; background: var(--gradient-accent);"></div>
+                            </div>
+                            <span style="display: block; font-size: 1.25rem; font-weight: 800; color: var(--white); margin-top: 0.5rem;">98% Coverage</span>
                         </div>
-                        <h3 style="color: var(--gray-900);">Labor Savings</h3>
-                        <p style="color: var(--gray-600);">Reduce manual cleaning workforce requirements</p>
-                    </div>
-                    <div class="feature-card" style="background: var(--gray-100); border: 1px solid var(--gray-300);">
-                        <div class="feature-icon">
-                            <i class="fas fa-hard-hat"></i>
+                        <div>
+                            <span style="display: block; font-size: 0.75rem; color: var(--text-dim); margin-bottom: 0.5rem;">POWER RECOVERY</span>
+                            <div style="height: 10px; background: var(--surface-border); border-radius: 5px; overflow: hidden;">
+                                <div style="width: 35%; height: 100%; background: var(--gradient-orange);"></div>
+                            </div>
+                            <span style="display: block; font-size: 1.25rem; font-weight: 800; color: var(--white); margin-top: 0.5rem;">+35% Gain</span>
                         </div>
-                        <h3 style="color: var(--gray-900);">Safety First</h3>
-                        <p style="color: var(--gray-600);">Minimize workplace accidents on rooftops</p>
-                    </div>
-                    <div class="feature-card" style="background: var(--gray-100); border: 1px solid var(--gray-300);">
-                        <div class="feature-icon">
-                            <i class="fas fa-calendar-check"></i>
-                        </div>
-                        <h3 style="color: var(--gray-900);">Optimized Schedule</h3>
-                        <p style="color: var(--gray-600);">Clean anytime without disrupting operations</p>
                     </div>
                 </div>
             </div>
 
             <!-- Specifications Tab -->
-            <div class="tab-content" id="specifications">
-                <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
-                    <h2 class="section-title">Technical Specifications</h2>
+            <div id="specifications" class="tab-content">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Data</h2>
                 </div>
                 
-                <h3 style="margin: 2rem 0 1rem; color: var(--gray-800);">Physical Characteristics</h3>
-                <table class="specs-table">
-                    <tr>
-                        <th>Overall Dimensions (L × W × H)</th>
-                        <td>1,200 × 1,500 × 290-400 mm</td>
-                    </tr>
-                    <tr>
-                        <th>Operating Weight</th>
-                        <td>≤ 40 kg (including battery)</td>
-                    </tr>
-                    <tr>
-                        <th>Frame/Body Material</th>
-                        <td>Aluminum Alloy 6061-T6 / Stainless Steel 304</td>
-                    </tr>
-                    <tr>
-                        <th>Industrial Protection Rating</th>
-                        <td>IP65 (Complete dust protection & low-pressure water jet resistance)</td>
-                    </tr>
-                </table>
-
-                <h3 style="margin: 2rem 0 1rem; color: var(--gray-800);">Performance</h3>
-                <table class="specs-table">
-                    <tr>
-                        <th>Movement & Cleaning Speed</th>
-                        <td>10-20 m/minute</td>
-                    </tr>
-                    <tr>
-                        <th>Theoretical Cleaning Capacity</th>
-                        <td>~1.0 - 2.0 MWp/day (in 6-hour work shift)</td>
-                    </tr>
-                    <tr>
-                        <th>Maximum Slope Angle</th>
-                        <td>25° - 30°</td>
-                    </tr>
-                    <tr>
-                        <th>Panel Surface Pressure</th>
-                        <td>&lt; 0.5 kg/cm²</td>
-                    </tr>
-                </table>
-
-                <h3 style="margin: 2rem 0 1rem; color: var(--gray-800);">Power System</h3>
-                <table class="specs-table">
-                    <tr>
-                        <th>Battery Technology</th>
-                        <td>LiFePO4 (Lithium Iron Phosphate) - Ultra-durable, fire/explosion safe</td>
-                    </tr>
-                    <tr>
-                        <th>Operating Time</th>
-                        <td>4 - 6 hours continuous operation per charge</td>
-                    </tr>
-                    <tr>
-                        <th>Control System</th>
-                        <td>2.4GHz Remote Controller with anti-interference technology</td>
-                    </tr>
-                    <tr>
-                        <th>Safe Operating Range</th>
-                        <td>Up to 100 meters</td>
-                    </tr>
-                </table>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                    <div>
+                        <h4 style="color: var(--accent); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem;">Mechanical</h4>
+                        <table class="specs-table">
+                            <tr><th>Dimensions</th><td>1200x1500x290 mm</td></tr>
+                            <tr><th>Weight</th><td>38 kg (with battery)</td></tr>
+                            <tr><th>Structure</th><td>AL 6061-T6 / SS 304</td></tr>
+                            <tr><th>Protection</th><td>IP65 Industrial</td></tr>
+                        </table>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--accent); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 1rem;">Performance</h4>
+                        <table class="specs-table">
+                            <tr><th>Max Slope</th><td>30 Degrees</td></tr>
+                            <tr><th>Cleaning Speed</th><td>15-25 m/min</td></tr>
+                            <tr><th>Daily Capacity</th><td>1.5 - 2.0 MWp</td></tr>
+                            <tr><th>Panel Pressure</th><td>&lt; 0.5 kg/cm²</td></tr>
+                        </table>
+                    </div>
+                </div>
             </div>
 
             <!-- Features Tab -->
-            <div class="tab-content" id="features">
-                <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
-                    <h2 class="section-title">Key Features & Benefits</h2>
+            <div id="features" class="tab-content">
+                <div class="section-header">
+                    <h2 class="section-title">Core Technologies</h2>
+                </div>
+                <div class="features-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                    <div class="card-industrial">
+                        <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Zero Micro-Crack</h3>
+                        <p>Specialized soft-brush and low-pressure track system protects panel integrity.</p>
+                    </div>
+                    <div class="card-industrial">
+                        <div class="card-icon"><i class="fas fa-tint"></i></div>
+                        <h3>Hybrid Clean</h3>
+                        <p>Toggle between dry sweeping and high-pressure water washing on the fly.</p>
+                    </div>
+                    <div class="card-industrial">
+                        <div class="card-icon"><i class="fas fa-broadcast-tower"></i></div>
+                        <h3>Smart Control</h3>
+                        <p>2.4GHz long-range remote with intelligent path-planning fallback.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Efficiency Comparison Section -->
+    <section class="section bg-grid" style="background-color: var(--surface);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Performance Validation</span>
+                <h2 class="section-title">Efficiency Comparison</h2>
+                <p class="section-desc">Real-world impact of automated cleaning vs. manual maintenance.</p>
+            </div>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+                <div class="card-industrial" style="border-left: 5px solid var(--text-muted);">
+                    <h3 style="color: var(--text-dim); margin-bottom: 2rem;">BEFORE CLEANING</h3>
+                    <div style="padding: 2rem; background: rgba(0,0,0,0.3); border-radius: var(--radius); margin-bottom: 2rem;">
+                        <i class="fas fa-sun" style="font-size: 3rem; color: #444; margin-bottom: 1rem;"></i>
+                        <p style="font-size: 0.9rem; color: var(--text-muted);">Dust accumulation, bird droppings, and industrial pollutants block <strong>~25%</strong> of sunlight.</p>
+                    </div>
+                    <div style="font-family: var(--font-mono); font-size: 2rem; color: var(--text-muted);">65% YIELD</div>
                 </div>
                 
-                <div class="products-grid" style="margin-top: 2rem;">
-                    <div class="product-card">
-                        <div class="product-image" style="height: 200px;">
-                            <div class="product-placeholder">
-                                <i class="fas fa-mountain"></i>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-title">Impressive Slope Climbing</h3>
-                            <p class="product-desc">
-                                Specialized anti-slip crawler track system allows stable operation on solar panel 
-                                surfaces inclined from <strong>25° to 30°</strong>, even under wet, slippery washing conditions.
-                            </p>
-                        </div>
+                <div class="card-industrial" style="border-left: 5px solid var(--accent); position: relative;">
+                    <div style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); background: var(--accent); color: white; padding: 0.5rem 1.5rem; border-radius: 20px; font-weight: 800; font-size: 0.8rem;">AFTER SCR-30</div>
+                    <h3 style="color: var(--white); margin-bottom: 2rem;">OPTIMIZED PERFORMANCE</h3>
+                    <div style="padding: 2rem; background: rgba(0,242,255,0.05); border-radius: var(--radius); margin-bottom: 2rem; border: 1px solid rgba(0,242,255,0.1);">
+                        <i class="fas fa-sun" style="font-size: 3rem; color: var(--secondary); margin-bottom: 1rem;"></i>
+                        <p style="font-size: 0.9rem; color: var(--text-dim);">Uniformly clean surface ensures maximum photon absorption and thermal regulation.</p>
                     </div>
-
-                    <div class="product-card">
-                        <div class="product-image" style="height: 200px;">
-                            <div class="product-placeholder gateway">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-title">Panel Surface Protection</h3>
-                            <p class="product-desc">
-                                Aerodynamic design with ultra-lightweight materials distributes extremely low pressure 
-                                (<strong>&lt; 0.5 kg/cm²</strong>) on tempered glass surfaces, absolutely preventing micro-cracks.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-image" style="height: 200px;">
-                            <div class="product-placeholder iiot">
-                                <i class="fas fa-tint"></i>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-title">Dual Cleaning Technology</h3>
-                            <p class="product-desc">
-                                Combines mechanical spiral brush (ultra-soft) with high-pressure water jets 
-                                (<strong>2-8 bar</strong>) to remove stubborn dirt, bird droppings, and industrial dust.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="product-card">
-                        <div class="product-image" style="height: 200px;">
-                            <div class="product-placeholder">
-                                <i class="fas fa-cubes"></i>
-                            </div>
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-title">Smart Modular Design</h3>
-                            <p class="product-desc">
-                                Quick-release assembly structure allows operators to completely disassemble/assemble 
-                                the robot in just <strong>3-5 minutes</strong>, extremely easy when moving between panel arrays.
-                            </p>
-                        </div>
-                    </div>
+                    <div style="font-family: var(--font-mono); font-size: 2rem; color: var(--secondary);">99% YIELD</div>
                 </div>
             </div>
         </div>

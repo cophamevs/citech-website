@@ -871,53 +871,77 @@ body {
 .specs-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 1rem;
+    margin: 2rem 0;
+    background: var(--surface);
+    border: 1px solid var(--surface-border);
 }
 
 .specs-table th,
 .specs-table td {
-    padding: 1rem 1.5rem;
+    padding: 1.25rem 2rem;
     text-align: left;
-    border-bottom: 1px solid var(--gray-300);
+    border-bottom: 1px solid var(--surface-border);
 }
 
 .specs-table th {
-    background: var(--gray-100);
+    background: rgba(255, 255, 255, 0.02);
+    color: var(--text-dim);
     font-weight: 600;
-    color: var(--gray-800);
-    width: 40%;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    width: 35%;
 }
 
 .specs-table td {
-    color: var(--gray-700);
+    color: var(--white);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+}
+
+.specs-table tr:last-child th,
+.specs-table tr:last-child td {
+    border-bottom: none;
+}
+
+.specs-table tr:hover td {
+    color: var(--secondary);
 }
 
 /* Tabs */
 .tabs {
     display: flex;
-    gap: 1rem;
-    margin-bottom: 2rem;
-    border-bottom: 2px solid var(--gray-300);
+    gap: 0.5rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid var(--surface-border);
+    padding-bottom: 1px;
 }
 
 .tab {
-    padding: 1rem 1.5rem;
-    background: none;
-    border: none;
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--gray-500);
+    padding: 1rem 2rem;
+    background: var(--surface);
+    border: 1px solid var(--surface-border);
+    border-bottom: none;
+    color: var(--text-dim);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
     cursor: pointer;
-    position: relative;
     transition: var(--transition);
+    position: relative;
 }
 
 .tab:hover {
-    color: var(--primary);
+    color: var(--white);
+    background: var(--surface-light);
 }
 
 .tab.active {
-    color: var(--primary);
+    background: var(--background);
+    color: var(--accent);
+    border-color: var(--surface-border);
+    border-top: 2px solid var(--accent);
 }
 
 .tab.active::after {
@@ -926,16 +950,59 @@ body {
     bottom: -2px;
     left: 0;
     right: 0;
-    height: 2px;
-    background: var(--primary);
+    height: 3px;
+    background: var(--background);
 }
 
 .tab-content {
     display: none;
+    animation: fadeIn 0.4s ease;
 }
 
 .tab-content.active {
     display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Product Specs Grid in Hero */
+.product-hero-specs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.spec-item {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.25rem;
+    background: var(--surface);
+    border: 1px solid var(--surface-border);
+}
+
+.spec-item i {
+    font-size: 1.5rem;
+    color: var(--accent);
+}
+
+.spec-item span {
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+}
+
+.spec-item strong {
+    display: block;
+    font-size: 1.1rem;
+    color: var(--white);
+    font-family: var(--font-mono);
 }
 
 /* Responsive */
