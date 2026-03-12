@@ -1,0 +1,28 @@
+# robots.txt for CITech Website
+# https://cophamevs.github.io/citech-website/
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://cophamevs.github.io/citech-website/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 10
+
+# Disallow specific paths (if any in future)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow specific bots (Google, Bing, etc.)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /

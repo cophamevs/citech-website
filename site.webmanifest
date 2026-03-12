@@ -1,0 +1,31 @@
+{
+    "name": "CITech Technology JSC",
+    "short_name": "CITech",
+    "description": "Industrial solar automation solutions - SCR-30 Robot, SCADA Gateway 378, IIoT Systems",
+    "start_url": "/citech-website/",
+    "display": "standalone",
+    "background_color": "#0a0a0a",
+    "theme_color": "#007bff",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "favicon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "favicon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "categories": ["business", "technology", "industrial"],
+    "lang": "en",
+    "dir": "ltr"
+}

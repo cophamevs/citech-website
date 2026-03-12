@@ -3,32 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - CITech</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="CITech Project Portfolio - 200+ solar automation projects completed across Vietnam. View our SCR-30 robot deployments and SCADA gateway implementations.">
+    <meta name="keywords" content="solar panel cleaning, SCADA, QĐ 378, EVN compliance, IIoT gateway, portfolio, solar projects Vietnam">
+    <meta name="author" content="CITech Technology JSC">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://cophamevs.github.io/citech-website/portfolio.html">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CITech - Solar Solutions & Automation | Portfolio">
+    <meta property="og:description" content="Explore 200+ successful solar automation projects across Vietnam. Industrial rooftops, solar farms, and SCADA implementations.">
+    <meta property="og:image" content="https://cophamevs.github.io/citech-website/images/portfolio-og.jpg">
+    <meta property="og:url" content="https://cophamevs.github.io/citech-website/portfolio.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CITech">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CITech - Solar Solutions & Automation | Portfolio">
+    <meta name="twitter:description" content="200+ successful solar automation projects across Vietnam. View our portfolio.">
+    <meta name="twitter:image" content="https://cophamevs.github.io/citech-website/images/portfolio-og.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.svg">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Preload Critical Resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style">
+    
+    <title>CITech - Solar Solutions & Automation | Portfolio</title>
+    
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    
+    <!-- JSON-LD Structured Data: Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "CITech Technology JSC",
+        "alternateName": "CITech",
+        "url": "https://cophamevs.github.io/citech-website/",
+        "logo": "https://cophamevs.github.io/citech-website/images/citech-logo.png",
+        "description": "Leading provider of solar automation solutions including robotic cleaning systems and SCADA gateways.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "SB18-93, Co Xanh 18 Street, Vinhomes Ocean Park 2",
+            "addressLocality": "Hung Yen",
+            "addressCountry": "VN"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+84-966-054-996",
+            "contactType": "sales",
+            "email": "citech.company.sp@gmail.com"
+        }
+    }
+    </script>
+    
+    <!-- JSON-LD Structured Data: Breadcrumb -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://cophamevs.github.io/citech-website/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Portfolio",
+                "item": "https://cophamevs.github.io/citech-website/portfolio.html"
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
+    <!-- Skip to Content Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <span class="logo-icon"><i class="fas fa-solar-panel"></i></span>
+            <a href="index.html" class="logo" aria-label="CITech Home">
+                <span class="logo-icon" aria-hidden="true"><i class="fas fa-solar-panel"></i></span>
                 <span class="logo-text">CITech</span>
             </a>
-            <button class="nav-toggle" id="navToggle">
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
-                <li><a href="scr30.html" class="nav-link">SCR-30 Robot</a></li>
-                <li><a href="news.html" class="nav-link">News & Insights</a></li>
-                <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+            <ul class="nav-menu" id="navMenu" role="menubar">
+                <li role="none"><a href="index.html" class="nav-link" role="menuitem">Home</a></li>
+                <li role="none"><a href="portfolio.html" class="nav-link active" role="menuitem" aria-current="page">Portfolio</a></li>
+                <li role="none"><a href="scr30.html" class="nav-link" role="menuitem">SCR-30 Robot</a></li>
+                <li role="none"><a href="news.html" class="nav-link" role="menuitem">News & Insights</a></li>
+                <li role="none"><a href="contact.html" class="nav-link" role="menuitem">Contact Us</a></li>
             </ul>
         </div>
     </nav>
@@ -44,112 +125,114 @@
         </div>
     </header>
 
+    <main id="main-content">
     <!-- Portfolio Section -->
-    <section class="section">
+    <section class="section" aria-labelledby="portfolio-title">
         <div class="container">
+            <h2 id="portfolio-title" class="visually-hidden">Our Projects</h2>
             <div class="portfolio-grid">
                 <!-- Project 1 -->
-                <div class="portfolio-card stitch-border">
-                    <div class="portfolio-image">
+                <article class="portfolio-card stitch-border">
+                    <div class="portfolio-image" aria-hidden="true">
                         <i class="fas fa-industry"></i>
                     </div>
                     <div class="portfolio-content">
                         <div class="portfolio-meta">
-                            <span><i class="fas fa-map-marker-alt"></i> Hung Yen</span>
-                            <span><i class="fas fa-solar-panel"></i> 5 MWp</span>
+                            <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Hung Yen</span>
+                            <span><i class="fas fa-solar-panel" aria-hidden="true"></i> 5 MWp</span>
                         </div>
                         <h3>Industrial Rooftop C&I</h3>
                         <p>Automation cluster deploying SCR-30 robots and Gateway 378 systems for full plant visibility.</p>
                     </div>
-                </div>
+                </article>
 
                 <!-- Project 2 -->
-                <div class="portfolio-card stitch-border">
-                    <div class="portfolio-image">
+                <article class="portfolio-card stitch-border">
+                    <div class="portfolio-image" aria-hidden="true">
                         <i class="fas fa-tractor"></i>
                     </div>
                     <div class="portfolio-content">
                         <div class="portfolio-meta">
-                            <span><i class="fas fa-map-marker-alt"></i> Dak Lak</span>
-                            <span><i class="fas fa-solar-panel"></i> 50 MWp</span>
+                            <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Dak Lak</span>
+                            <span><i class="fas fa-solar-panel" aria-hidden="true"></i> 50 MWp</span>
                         </div>
                         <h3>Agricultural Solar Farm</h3>
                         <p>Scaling cleaning operations with a fleet of automated robots in high-dust environments.</p>
                     </div>
-                </div>
+                </article>
 
                 <!-- Project 3 -->
-                <div class="portfolio-card stitch-border">
-                    <div class="portfolio-image">
+                <article class="portfolio-card stitch-border">
+                    <div class="portfolio-image" aria-hidden="true">
                         <i class="fas fa-warehouse"></i>
                     </div>
                     <div class="portfolio-content">
                         <div class="portfolio-meta">
-                            <span><i class="fas fa-map-marker-alt"></i> Binh Duong</span>
-                            <span><i class="fas fa-solar-panel"></i> 2 MWp</span>
+                            <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Binh Duong</span>
+                            <span><i class="fas fa-solar-panel" aria-hidden="true"></i> 2 MWp</span>
                         </div>
                         <h3>Logistics Hub</h3>
                         <p>IIoT edge computing integration using Orange Pi R1+ for real-time power analytics.</p>
                     </div>
-                </div>
+                </article>
 
                 <!-- Project 4 -->
-                <div class="portfolio-card stitch-border">
-                    <div class="portfolio-image">
+                <article class="portfolio-card stitch-border">
+                    <div class="portfolio-image" aria-hidden="true">
                         <i class="fas fa-building"></i>
                     </div>
                     <div class="portfolio-content">
                         <div class="portfolio-meta">
-                            <span><i class="fas fa-map-marker-alt"></i> HCMC</span>
-                            <span><i class="fas fa-solar-panel"></i> 1.5 MWp</span>
+                            <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> HCMC</span>
+                            <span><i class="fas fa-solar-panel" aria-hidden="true"></i> 1.5 MWp</span>
                         </div>
                         <h3>Commercial Complex</h3>
                         <p>Urban solar maintenance achieving significant yield recovery through automated cycles.</p>
                     </div>
-                </div>
+                </article>
 
                 <!-- Project 5 -->
-                <div class="portfolio-card stitch-border">
-                    <div class="portfolio-image">
+                <article class="portfolio-card stitch-border">
+                    <div class="portfolio-image" aria-hidden="true">
                         <i class="fas fa-water"></i>
                     </div>
                     <div class="portfolio-content">
                         <div class="portfolio-meta">
-                            <span><i class="fas fa-map-marker-alt"></i> Ninh Thuan</span>
-                            <span><i class="fas fa-solar-panel"></i> 100 MWp</span>
+                            <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Ninh Thuan</span>
+                            <span><i class="fas fa-solar-panel" aria-hidden="true"></i> 100 MWp</span>
                         </div>
                         <h3>Utility-Scale Deployment</h3>
                         <p>Full fleet management system with centralized control for Vietnam's largest solar assets.</p>
                     </div>
-                </div>
+                </article>
 
                 <!-- Project 6 -->
-                <div class="portfolio-card stitch-border">
-                    <div class="portfolio-image">
+                <article class="portfolio-card stitch-border">
+                    <div class="portfolio-image" aria-hidden="true">
                         <i class="fas fa-hospital"></i>
                     </div>
                     <div class="portfolio-content">
                         <div class="portfolio-meta">
-                            <span><i class="fas fa-map-marker-alt"></i> Hanoi</span>
-                            <span><i class="fas fa-solar-panel"></i> 800 kWp</span>
+                            <span><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Hanoi</span>
+                            <span><i class="fas fa-solar-panel" aria-hidden="true"></i> 800 kWp</span>
                         </div>
                         <h3>Critical Care Infrastructure</h3>
                         <p>Ensuring 100% power reliability for essential healthcare services with smart monitoring.</p>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
     <!-- Stats Section -->
-    <section class="section section-dark">
+    <section class="section section-dark" aria-labelledby="stats-title">
         <div class="container">
             <div class="section-header light">
                 <span class="section-tag">Impact</span>
-                <h2 class="section-title">Our Track Record</h2>
+                <h2 id="stats-title" class="section-title">Our Track Record</h2>
             </div>
             
-            <div class="hero-stats" style="max-width: 800px; margin: 0 auto; border-top: none; padding-top: 0;">
+            <div class="hero-stats" style="max-width: 800px; margin: 0 auto; border-top: none; padding-top: 0;" role="region" aria-label="Company statistics">
                 <div class="stat-item">
                     <span class="stat-number">200+</span>
                     <span class="stat-label">Projects Completed</span>
@@ -171,26 +254,27 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section">
+    <section class="cta-section" aria-labelledby="cta-title">
         <div class="container">
             <div class="cta-content">
-                <h2>Have a Project in Mind?</h2>
+                <h2 id="cta-title">Have a Project in Mind?</h2>
                 <p>Let's discuss how CITech can help maximize your solar investment returns.</p>
                 <a href="contact.html" class="btn btn-primary btn-large">
-                    <i class="fas fa-paper-plane"></i>
+                    <i class="fas fa-paper-plane" aria-hidden="true"></i>
                     Start a Conversation
                 </a>
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="index.html" class="logo">
-                        <span class="logo-icon"><i class="fas fa-solar-panel"></i></span>
+                    <a href="index.html" class="logo" aria-label="CITech Home">
+                        <span class="logo-icon" aria-hidden="true"><i class="fas fa-solar-panel"></i></span>
                         <span class="logo-text">CITech</span>
                     </a>
                     <p class="footer-desc">
@@ -198,12 +282,12 @@
                         We help businesses maximize their renewable energy investments.
                     </p>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
                     </div>
                 </div>
-                <div class="footer-links">
+                <nav class="footer-links" aria-label="Quick links">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -212,30 +296,30 @@
                         <li><a href="news.html">News & Insights</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
-                </div>
-                <div class="footer-links">
+                </nav>
+                <nav class="footer-links" aria-label="Products">
                     <h4>Products</h4>
                     <ul>
                         <li><a href="scr30.html">SCR-30 Robot</a></li>
                         <li><a href="contact.html">Solar Gateway 378</a></li>
                         <li><a href="contact.html">IIoT Gateway</a></li>
                     </ul>
-                </div>
+                </nav>
                 <div class="footer-contact">
                     <h4>Contact</h4>
                     <ul>
                         <li>
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                             SB18-93, Co Xanh 18 Street,<br>
                             Vinhomes Ocean Park 2,<br>
                             Hung Yen Province, Vietnam
                         </li>
                         <li>
-                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
                             <a href="mailto:citech.company.sp@gmail.com">citech.company.sp@gmail.com</a>
                         </li>
                         <li>
-                            <i class="fas fa-phone"></i>
+                            <i class="fas fa-phone" aria-hidden="true"></i>
                             <a href="tel:+84966054996">0966 054 996</a>
                         </li>
                     </ul>
@@ -247,6 +331,6 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>

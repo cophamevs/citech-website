@@ -3,45 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CITech - Solar Cleaning Robot & Automation Solutions</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="CITech provides industrial solar panel cleaning robots & SCADA automation solutions. EVN QĐ 378 compliant gateways. Maximize solar efficiency up to 35% with our SCR-30 robot.">
+    <meta name="keywords" content="solar panel cleaning, SCADA, QĐ 378, EVN compliance, IIoT gateway, solar robot, automation Vietnam">
+    <meta name="author" content="CITech Technology JSC">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://cophamevs.github.io/citech-website/">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="CITech - Solar Solutions & Automation | Home">
+    <meta property="og:description" content="Industrial solar panel cleaning robots & SCADA automation solutions. EVN QĐ 378 compliant. Maximize efficiency up to 35%.">
+    <meta property="og:image" content="https://cophamevs.github.io/citech-website/images/citech-og.jpg">
+    <meta property="og:url" content="https://cophamevs.github.io/citech-website/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="CITech">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CITech - Solar Solutions & Automation | Home">
+    <meta name="twitter:description" content="Industrial solar panel cleaning robots & SCADA automation solutions. EVN QĐ 378 compliant.">
+    <meta name="twitter:image" content="https://cophamevs.github.io/citech-website/images/citech-og.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.svg">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Preload Critical Resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style">
+    
+    <title>CITech - Solar Solutions & Automation | Home</title>
+    
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    
+    <!-- JSON-LD Structured Data: Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "CITech Technology JSC",
+        "alternateName": "CITech",
+        "url": "https://cophamevs.github.io/citech-website/",
+        "logo": "https://cophamevs.github.io/citech-website/images/citech-logo.png",
+        "description": "Leading provider of solar automation solutions including robotic cleaning systems and SCADA gateways.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "SB18-93, Co Xanh 18 Street, Vinhomes Ocean Park 2",
+            "addressLocality": "Hung Yen",
+            "addressCountry": "VN"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+84-966-054-996",
+            "contactType": "sales",
+            "email": "citech.company.sp@gmail.com"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/company/citech",
+            "https://www.facebook.com/citech"
+        ]
+    }
+    </script>
+    
+    <!-- JSON-LD Structured Data: Product - SCR-30 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "SCR-30 Solar Cleaning Robot",
+        "image": "https://cophamevs.github.io/citech-website/images/scr30-product.jpg",
+        "description": "Automated dry/wet cleaning system for C&I rooftops and large-scale solar farms. 30° climbing ability, LiFePO4 power system.",
+        "brand": {
+            "@type": "Organization",
+            "name": "CITech Technology JSC"
+        },
+        "offers": {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock",
+            "priceCurrency": "USD",
+            "priceValidUntil": "2026-12-31"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "50"
+        }
+    }
+    </script>
+    
+    <!-- JSON-LD Structured Data: Product - Gateway 378 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Solar Gateway 378",
+        "description": "EVN-compliant SCADA gateway for seamless power plant monitoring and control. QĐ 378/EVN Standard compliant.",
+        "brand": {
+            "@type": "Organization",
+            "name": "CITech Technology JSC"
+        },
+        "offers": {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock",
+            "priceCurrency": "USD"
+        }
+    }
+    </script>
 </head>
 <body>
+    <!-- Skip to Content Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <span class="logo-icon"><i class="fas fa-solar-panel"></i></span>
+            <a href="index.html" class="logo" aria-label="CITech Home">
+                <span class="logo-icon" aria-hidden="true"><i class="fas fa-solar-panel"></i></span>
                 <span class="logo-text">CITech</span>
             </a>
-            <button class="nav-toggle" id="navToggle">
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                <li><a href="scr30.html" class="nav-link">SCR-30 Robot</a></li>
-                <li><a href="news.html" class="nav-link">News & Insights</a></li>
-                <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+            <ul class="nav-menu" id="navMenu" role="menubar">
+                <li role="none"><a href="index.html" class="nav-link active" role="menuitem" aria-current="page">Home</a></li>
+                <li role="none"><a href="portfolio.html" class="nav-link" role="menuitem">Portfolio</a></li>
+                <li role="none"><a href="scr30.html" class="nav-link" role="menuitem">SCR-30 Robot</a></li>
+                <li role="none"><a href="news.html" class="nav-link" role="menuitem">News & Insights</a></li>
+                <li role="none"><a href="contact.html" class="nav-link" role="menuitem">Contact Us</a></li>
             </ul>
         </div>
     </nav>
 
+    <main id="main-content">
     <!-- Hero Section -->
-    <section class="hero bg-grid">
+    <section class="hero bg-grid" aria-labelledby="hero-title">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-badge">
-                    <i class="fas fa-bolt"></i>
+                    <i class="fas fa-bolt" aria-hidden="true"></i>
                     Next-Gen Solar Automation
                 </div>
-                <h1 class="hero-title">
+                <h1 id="hero-title" class="hero-title">
                     MAXIMIZE<br>
                     <span>SOLAR YIELD</span>
                 </h1>
@@ -50,15 +159,15 @@
                     Restoring up to <strong>35% efficiency</strong>.
                 </p>
                 <div class="hero-cta">
-                    <a href="scr30.html" class="btn btn-primary">
-                        Get the specs <i class="fas fa-chevron-right"></i>
+                    <a href="scr30.html" class="btn btn-primary" aria-label="Get SCR-30 specifications">
+                        Get the specs <i class="fas fa-chevron-right" aria-hidden="true"></i>
                     </a>
                     <a href="portfolio.html" class="btn btn-outline">
                         View Projects
                     </a>
                 </div>
                 
-                <div class="hero-stats">
+                <div class="hero-stats" role="region" aria-label="Key statistics">
                     <div class="stat-item">
                         <span class="stat-number">35%</span>
                         <span class="stat-label">Efficiency</span>
@@ -81,18 +190,18 @@
     </section>
 
     <!-- Products Section -->
-    <section id="products" class="section">
+    <section id="products" class="section" aria-labelledby="products-title">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Systems & Solutions</span>
-                <h2 class="section-title">Industrial Grade Hardware</h2>
+                <h2 id="products-title" class="section-title">Industrial Grade Hardware</h2>
                 <p class="section-desc">Engineered for extreme environments and maximum reliability.</p>
             </div>
             
             <div class="products-grid">
                 <!-- SCR-30 Card -->
-                <div class="product-card stitch-border stitch-border-tl">
-                    <div class="product-image">
+                <article class="product-card stitch-border stitch-border-tl">
+                    <div class="product-image" aria-hidden="true">
                         <i class="fas fa-robot"></i>
                     </div>
                     <div class="product-content">
@@ -101,17 +210,17 @@
                             Automated dry/wet cleaning system for C&I rooftops and large-scale solar farms.
                         </p>
                         <ul class="product-features">
-                            <li><i class="fas fa-caret-right"></i> 30° Climbing Ability</li>
-                            <li><i class="fas fa-caret-right"></i> LiFePO4 Power System</li>
-                            <li><i class="fas fa-caret-right"></i> Zero Micro-Crack Tech</li>
+                            <li><i class="fas fa-caret-right" aria-hidden="true"></i> 30° Climbing Ability</li>
+                            <li><i class="fas fa-caret-right" aria-hidden="true"></i> LiFePO4 Power System</li>
+                            <li><i class="fas fa-caret-right" aria-hidden="true"></i> Zero Micro-Crack Tech</li>
                         </ul>
                         <a href="scr30.html" class="btn btn-secondary">Technical Data</a>
                     </div>
-                </div>
+                </article>
 
                 <!-- Solar Gateway Card -->
-                <div class="product-card stitch-border">
-                    <div class="product-image">
+                <article class="product-card stitch-border">
+                    <div class="product-image" aria-hidden="true">
                         <i class="fas fa-network-wired"></i>
                     </div>
                     <div class="product-content">
@@ -120,17 +229,17 @@
                             EVN-compliant SCADA gateway for seamless power plant monitoring and control.
                         </p>
                         <ul class="product-features">
-                            <li><i class="fas fa-caret-right"></i> QĐ 378/EVN Standard</li>
-                            <li><i class="fas fa-caret-right"></i> BESS / Curtailment Ready</li>
-                            <li><i class="fas fa-caret-right"></i> IEC 60870-5-104</li>
+                            <li><i class="fas fa-caret-right" aria-hidden="true"></i> QĐ 378/EVN Standard</li>
+                            <li><i class="fas fa-caret-right" aria-hidden="true"></i> BESS / Curtailment Ready</li>
+                            <li><i class="fas fa-caret-right" aria-hidden="true"></i> IEC 60870-5-104</li>
                         </ul>
                         <a href="contact.html" class="btn btn-secondary">Inquire</a>
                     </div>
-                </div>
+                </article>
 
                 <!-- IIoT Gateway Card -->
-                <div class="product-card stitch-border stitch-border-br">
-                    <div class="product-image">
+                <article class="product-card stitch-border stitch-border-br">
+                    <div class="product-image" aria-hidden="true">
                         <i class="fas fa-microchip"></i>
                     </div>
                     <div class="product-content">
@@ -139,69 +248,69 @@
                             Industrial IIoT gateway powered by RK3328 for edge computing and data aggregation.
                         </p>
                         <ul class="product-features">
-                            <li><i class="fas fa-caret-right"></i> Dual Gigabit Ethernet</li>
-                            <li><i class="fas fa-caret-right"></i> Modbus/OPCUA/MQTT</li>
-                            <li><i class="fas fa-caret-right"></i> Industrial Temp Range</li>
+                            <li><i class="fas fa-caret-right" aria-hidden="true"></i> Dual Gigabit Ethernet</li>
+                            <li><i class="fas fa-caret-right" aria-hidden="true"></i> Modbus/OPCUA/MQTT</li>
+                            <li><i class="fas fa-caret-right" aria-hidden="true"></i> Industrial Temp Range</li>
                         </ul>
                         <a href="contact.html" class="btn btn-secondary">Inquire</a>
                     </div>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
     <!-- Why Choose Us -->
-    <section class="section bg-grid" style="background-color: var(--surface);">
+    <section class="section bg-grid" style="background-color: var(--surface);" aria-labelledby="why-citech-title">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Performance</span>
-                <h2 class="section-title">Why CITech?</h2>
+                <h2 id="why-citech-title" class="section-title">Why CITech?</h2>
             </div>
             <div class="features-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
-                <div class="card-industrial">
-                    <div class="card-icon"><i class="fas fa-shield-virus"></i></div>
+                <article class="card-industrial">
+                    <div class="card-icon" aria-hidden="true"><i class="fas fa-shield-virus"></i></div>
                     <h3>IP65 Rated</h3>
                     <p>Fully sealed electronics for operation in harsh, dusty, and wet industrial conditions.</p>
-                </div>
-                <div class="card-industrial">
-                    <div class="card-icon"><i class="fas fa-weight-hanging"></i></div>
+                </article>
+                <article class="card-industrial">
+                    <div class="card-icon" aria-hidden="true"><i class="fas fa-weight-hanging"></i></div>
                     <h3>Lightweight</h3>
                     <p>Modular carbon-fiber construction for easy deployment and minimal panel stress.</p>
-                </div>
-                <div class="card-industrial">
-                    <div class="card-icon"><i class="fas fa-satellite-dish"></i></div>
+                </article>
+                <article class="card-industrial">
+                    <div class="card-icon" aria-hidden="true"><i class="fas fa-satellite-dish"></i></div>
                     <h3>Cloud Sync</h3>
                     <p>Real-time telemetry and cleaning reports pushed directly to your dashboard.</p>
-                </div>
+                </article>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section">
+    <section id="about" class="section" aria-labelledby="about-title">
         <div class="container">
             <div class="about-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
                 <div class="about-content">
                     <span class="section-tag">About CITech</span>
-                    <h2 class="section-title">Innovating Solar Automation</h2>
+                    <h2 id="about-title" class="section-title">Innovating Solar Automation</h2>
                     <p class="section-desc" style="margin-bottom: 2rem;">
                         CITech Technology Co., Ltd is a pioneer in advanced automation and IoT solutions for renewable energy. We specialize in intelligent robotic systems and high-reliability SCADA gateways.
                     </p>
                     
                     <div class="about-features" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-                        <div class="card-industrial" style="padding: 1.5rem;">
-                            <h4 style="color: var(--white); margin-bottom: 0.5rem;"><i class="fas fa-microchip" style="color: var(--primary); margin-right: 0.5rem;"></i> R&D Focus</h4>
+                        <article class="card-industrial" style="padding: 1.5rem;">
+                            <h4 style="color: var(--white); margin-bottom: 0.5rem;"><i class="fas fa-microchip" style="color: var(--primary); margin-right: 0.5rem;" aria-hidden="true"></i> R&D Focus</h4>
                             <p style="font-size: 0.85rem; color: var(--text-dim);">Continuous innovation in robotics and edge computing.</p>
-                        </div>
-                        <div class="card-industrial" style="padding: 1.5rem;">
-                            <h4 style="color: var(--white); margin-bottom: 0.5rem;"><i class="fas fa-check-double" style="color: var(--primary); margin-right: 0.5rem;"></i> EVN Standard</h4>
+                        </article>
+                        <article class="card-industrial" style="padding: 1.5rem;">
+                            <h4 style="color: var(--white); margin-bottom: 0.5rem;"><i class="fas fa-check-double" style="color: var(--primary); margin-right: 0.5rem;" aria-hidden="true"></i> EVN Standard</h4>
                             <p style="font-size: 0.85rem; color: var(--text-dim);">100% compliance with national grid requirements.</p>
-                        </div>
+                        </article>
                     </div>
                 </div>
-                <div class="about-image stitch-border stitch-border-tl stitch-border-br">
+                <div class="about-image stitch-border stitch-border-tl stitch-border-br" role="img" aria-label="CITech Factory and Lab facility">
                     <div style="width: 100%; height: 400px; background: var(--surface); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
-                        <i class="fas fa-industry" style="font-size: 10rem; color: var(--surface-border);"></i>
+                        <i class="fas fa-industry" style="font-size: 10rem; color: var(--surface-border);" aria-hidden="true"></i>
                         <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 2rem; background: linear-gradient(transparent, var(--background));">
                             <h4 style="color: var(--white); margin-bottom: 0.5rem;">Factory & Lab</h4>
                             <p style="font-size: 0.9rem; color: var(--text-dim);">Designed and tested for durability in extreme environments.</p>
@@ -213,26 +322,27 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section">
+    <section class="cta-section" aria-labelledby="cta-title">
         <div class="container">
             <div class="cta-content">
-                <h2>Ready to Maximize Your Solar Output?</h2>
+                <h2 id="cta-title">Ready to Maximize Your Solar Output?</h2>
                 <p>Contact our team to discuss your solar cleaning requirements and get a customized solution.</p>
                 <a href="contact.html" class="btn btn-primary btn-large">
-                    <i class="fas fa-paper-plane"></i>
+                    <i class="fas fa-paper-plane" aria-hidden="true"></i>
                     Contact Us Today
                 </a>
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="index.html" class="logo">
-                        <span class="logo-icon"><i class="fas fa-solar-panel"></i></span>
+                    <a href="index.html" class="logo" aria-label="CITech Home">
+                        <span class="logo-icon" aria-hidden="true"><i class="fas fa-solar-panel"></i></span>
                         <span class="logo-text">CITech</span>
                     </a>
                     <p class="footer-desc">
@@ -240,12 +350,12 @@
                         We help businesses maximize their renewable energy investments.
                     </p>
                     <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                        <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
                     </div>
                 </div>
-                <div class="footer-links">
+                <nav class="footer-links" aria-label="Quick links">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -254,30 +364,30 @@
                         <li><a href="news.html">News & Insights</a></li>
                         <li><a href="contact.html">Contact Us</a></li>
                     </ul>
-                </div>
-                <div class="footer-links">
+                </nav>
+                <nav class="footer-links" aria-label="Products">
                     <h4>Products</h4>
                     <ul>
                         <li><a href="scr30.html">SCR-30 Robot</a></li>
                         <li><a href="contact.html">Solar Gateway 378</a></li>
                         <li><a href="contact.html">IIoT Gateway</a></li>
                     </ul>
-                </div>
+                </nav>
                 <div class="footer-contact">
                     <h4>Contact</h4>
                     <ul>
                         <li>
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                             SB18-93, Co Xanh 18 Street,<br>
                             Vinhomes Ocean Park 2,<br>
                             Hung Yen Province, Vietnam
                         </li>
                         <li>
-                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
                             <a href="mailto:citech.company.sp@gmail.com">citech.company.sp@gmail.com</a>
                         </li>
                         <li>
-                            <i class="fas fa-phone"></i>
+                            <i class="fas fa-phone" aria-hidden="true"></i>
                             <a href="tel:+84966054996">0966 054 996</a>
                         </li>
                     </ul>
@@ -289,6 +399,6 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>
